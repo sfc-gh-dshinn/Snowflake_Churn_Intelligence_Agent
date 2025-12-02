@@ -44,6 +44,7 @@ source venv/bin/activate
 pip3 install -r requirements.txt
 
 # 3. Run Streamlit app with required environment variables
+#    You can get the <ACCOUNT_URL> by running the following on Snowflake `SELECT CURRENT_ORGANIZATION_NAME() || '-' || CURRENT_ACCOUNT_NAME() || '.snowflakecomputing.com';`
 CORTEX_AGENT_DEMO_PAT=<PAT> \
 CORTEX_AGENT_DEMO_HOST=<ACCOUNT_URL> \
 CORTEX_AGENT_DEMO_DATABASE="SNOWFLAKE_INTELLIGENCE" \
