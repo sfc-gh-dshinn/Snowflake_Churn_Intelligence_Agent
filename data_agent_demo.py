@@ -202,7 +202,7 @@ elif page == "📊 Marketing Dashboard":
     # -------------------------
     @st.cache_data
     def load_churn_data():
-        df = pd.read_csv("/Users/sujoshi/Desktop/sfguide-getting-started-with-cortex-agents/CHURN_DATA_EXPLANATIONS.csv")
+        df = pd.read_csv("CHURN_DATA_EXPLANATIONS.csv")
         return df
 
     df = load_churn_data()
@@ -299,7 +299,7 @@ elif page == "📈 Customer Churn Insights":
 
     @st.cache_data
     def load_churn_data():
-        df = pd.read_csv("/Users/sujoshi/Desktop/sfguide-getting-started-with-cortex-agents/CHURN_DATA_EXPLANATIONS.csv")
+        df = pd.read_csv("CHURN_DATA_EXPLANATIONS.csv")
         return df
 
     df = load_churn_data()
